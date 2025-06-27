@@ -1,0 +1,1 @@
+<img src="{{ asset('images/LOGO HIMA/LOGO HIMA SI BARU.png') }}" alt="Logo HIMA SI UNIKU" class="h-9 w-auto" />
