@@ -23,8 +23,11 @@ Route::get('/acara/{slug}', [EventController::class, 'show'])->name('events.show
 
 // Aspiration routes
 Route::get('/aspirasi', [AspirationController::class, 'index'])->name('aspirations.index');
-Route::get('/aspirasi/create', [AspirationController::class, 'create'])->name('aspirations.create');
+Route::get('/aspirasi/kirim', [AspirationController::class, 'create'])->name('aspirations.create');
 Route::post('/aspirasi', [AspirationController::class, 'store'])->name('aspirations.store');
+Route::get('/aspirasi/publik', function() {
+    return view('pages.aspirations.index');
+})->name('aspirations.public');
 
 // Cabinet routes
 Route::get('/kabinet', [KabinetController::class, 'index'])->name('kabinet.index');
@@ -48,9 +51,16 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::post('/newsletter/subscribe', [App\Http\Controllers\NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
 Route::get('/newsletter/subscribers', [App\Http\Controllers\NewsletterController::class, 'index'])->name('newsletter.subscribers');
 
+
+
 Route::get('/dashboard', function () {
     return view('user-dashboard');
 })->middleware('web')->name('dashboard');
+
+// User aspirations routes
+Route::middleware(['auth', 'verified'])->prefix('user')->name('user.')->group(function () {
+    Route::resource('aspirations', \App\Http\Controllers\User\AspirationController::class)->only(['index', 'show', 'destroy']);
+});
 
 Route::group([], function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

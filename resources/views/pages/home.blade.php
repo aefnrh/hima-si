@@ -388,13 +388,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center md:text-left">
+                <div class="text-center md:text-left space-y-4">
                     <a href="{{ route('aspirations.create') }}" class="inline-flex items-center bg-[#667EEA] dark:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-[#5A67D8] dark:hover:bg-indigo-600 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
                         </svg>
                         <span>Sampaikan Aspirasi Anda</span>
                     </a>
+                    <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4 mt-4">
+                        <a href="{{ route('aspirations.public') }}" class="inline-flex items-center justify-center text-[#667EEA] border border-[#667EEA] px-4 py-2 rounded-lg font-medium hover:bg-[#667EEA]/10 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            <span>Lihat Aspirasi Publik</span>
+                        </a>
+                        @auth
+                        <a href="{{ route('user.aspirations.index') }}" class="inline-flex items-center justify-center text-[#667EEA] border border-[#667EEA] px-4 py-2 rounded-lg font-medium hover:bg-[#667EEA]/10 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            <span>Aspirasi Saya</span>
+                        </a>
+                        @endauth
+                    </div>
                 </div>
             </div>
         </div>

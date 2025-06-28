@@ -54,6 +54,7 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     
     // Aspiration routes - only index, show, update, destroy
     Route::resource('aspirations', AspirationController::class)->except(['create', 'store', 'edit']);
+    Route::patch('aspirations/{aspiration}/toggle-visibility', [AspirationController::class, 'toggleVisibility'])->name('aspirations.toggle-visibility');
     
     // Newsletter routes
     Route::get('newsletter', [NewsletterController::class, 'index'])->name('newsletter.index');

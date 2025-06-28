@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Aspiration extends Model
 {
@@ -19,7 +20,10 @@ class Aspiration extends Model
         'email',
         'subject',
         'message',
+        'response',
         'status',
+        'is_visible',
+        'user_id',
     ];
 
     /**
@@ -29,5 +33,14 @@ class Aspiration extends Model
      */
     protected $casts = [
         'created_at' => 'datetime',
+        'is_visible' => 'boolean',
     ];
+    
+    /**
+     * Get the user that owns the aspiration.
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

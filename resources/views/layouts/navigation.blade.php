@@ -15,6 +15,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('aspirations.public')" :active="request()->routeIs('aspirations.public')">
+                        {{ __('Aspirasi Publik') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('user.aspirations.index')" :active="request()->routeIs('user.aspirations.*')">
+                        {{ __('Aspirasi Saya') }}
+                    </x-nav-link>
                 </div>
             </div>
             
@@ -85,6 +91,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('aspirations.public')" :active="request()->routeIs('aspirations.public')">
+                {{ __('Aspirasi Publik') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('user.aspirations.index')" :active="request()->routeIs('user.aspirations.*')">
+                {{ __('Aspirasi Saya') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('newsletter.subscribers')" :active="request()->routeIs('newsletter.subscribers')">
                 <div class="flex items-center">

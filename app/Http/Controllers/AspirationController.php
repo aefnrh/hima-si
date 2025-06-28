@@ -39,10 +39,21 @@ class AspirationController extends Controller
             'subject' => 'required|string|max:255',
             'message' => 'required|string',
         ]);
+        
+        // Tambahkan user_id jika user sedang login
+        if (auth()->check()) {
+            $validated['user_id'] = auth()->id();
+        }
 
         Aspiration::create($validated);
 
-        return redirect()->route('aspirations.index')
-            ->with('success', 'Aspirasi Anda telah berhasil dikirim. Terima kasih atas masukan Anda!');
+        // Redirect ke halaman user aspirations jika user login, jika tidak ke halaman aspirasi publik
+        if (auth()->check()) {
+            return redirect()->route('user.aspirations.index')
+                ->with('success', 'Aspirasi Anda telah berhasil dikirim. Terima kasih atas masukan Anda!');
+        } else {
+            return redirect()->route('aspirations.index')
+                ->with('success', 'Aspirasi Anda telah berhasil dikirim. Terima kasih atas masukan Anda!');
+        }
     }
 }

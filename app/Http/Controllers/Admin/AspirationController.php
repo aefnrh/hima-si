@@ -37,12 +37,35 @@ class AspirationController extends Controller
     {
         $validated = $request->validate([
             'status' => 'required|in:pending,read,responded',
+            'response' => 'nullable|string',
+            'is_visible' => 'nullable|boolean',
         ]);
+
+        // Jika ada response dan status belum responded, update status menjadi responded
+        if (!empty($validated['response']) && $aspiration->status !== 'responded') {
+            $validated['status'] = 'responded';
+        }
+
+        // Konversi checkbox is_visible
+        $validated['is_visible'] = isset($request->is_visible) ? true : false;
 
         $aspiration->update($validated);
 
-        return redirect()->route('admin.aspirations.index')
-            ->with('success', 'Status aspirasi berhasil diperbarui.');
+        return redirect()->route('admin.aspirations.show', $aspiration)
+            ->with('success', 'Aspirasi berhasil diperbarui.');
+    }
+
+    /**
+     * Toggle visibility of the aspiration.
+     */
+    public function toggleVisibility(Aspiration $aspiration)
+    {
+        $aspiration->update([
+            'is_visible' => !$aspiration->is_visible
+        ]);
+
+        return redirect()->back()
+            ->with('success', 'Visibilitas aspirasi berhasil diubah.');
     }
 
     /**
