@@ -36,13 +36,12 @@ class KabinetDivisionController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'year' => 'required|string|max:255',
+            'description' => 'required|string',
             'vision' => 'required|string',
             'mission' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        
-        // Gunakan nama sebagai slug tanpa modifikasi
-        $validated['slug'] = $validated['name'];
+        $validated['slug'] = Str::slug($validated['name']);
 
         if ($request->hasFile('image')) {
             $imageName = time() . '.' . $request->image->extension();
@@ -72,10 +71,12 @@ class KabinetDivisionController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'year' => 'required|string|max:255',
+            'description' => 'required|string',
             'vision' => 'required|string',
             'mission' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+        $validated['slug'] = Str::slug($validated['name']);
 
         if ($request->hasFile('image')) {
             // Delete old image if exists

@@ -1,6 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app-layout>
+<x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Aspirasi Publik') }}
+        </h2>
+</x-slot>
 <div class="container mx-auto px-4 py-8">
     <div class="text-center mb-10">
         <h1 class="text-3xl font-bold mb-2">Aspirasi Mahasiswa</h1>
@@ -76,7 +79,7 @@
                     <div class="p-6">
                         <h2 class="text-xl font-semibold mb-4">Aspirasi Saya</h2>
                         <p class="text-gray-600 mb-4">Lihat dan kelola aspirasi yang telah Anda kirimkan.</p>
-                        <a href="{{ route('user.aspirations.index') }}" class="block w-full text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+                        <a href="{{ route('aspirations.index') }}" class="block w-full text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
                             Lihat Aspirasi Saya
                         </a>
                     </div>
@@ -85,4 +88,4 @@
         </div>
     </div>
 </div>
-@endsection
+</x-app-layout>

@@ -13,7 +13,7 @@ class AspirationController extends Controller
      */
     public function index()
     {
-        $aspirations = Aspiration::orderBy('created_at', 'desc')->get();
+        $aspirations = Aspiration::orderBy('created_at', 'desc')->paginate(10);
         return view('admin.aspirations.index', compact('aspirations'));
     }
 

@@ -363,6 +363,190 @@
                 </a>
             </div>
         </div>
+        <!-- Donation Section -->
+<div class="mt-16 mb-12 fade-in-up" id="donation">
+    <div class="flex items-center mb-8">
+        <span class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </span>
+        <h2 class="text-2xl font-bold text-gray-800">Dukung HIMA SI Melalui Donasi</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div
+            class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-100 shadow-xl hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-bold text-indigo-800 mb-4">Mengapa Berdonasi?</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="text-gray-700">Mendukung pengembangan kegiatan akademik dan non-akademik
+                        mahasiswa</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="text-gray-700">Membantu penyelenggaraan seminar dan workshop berkualitas</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="text-gray-700">Mendukung pengembangan inovasi dan kreativitas mahasiswa</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="text-gray-700">Membantu mahasiswa yang membutuhkan dukungan finansial</span>
+                </li>
+            </ul>
+        </div>
+
+        <div
+            class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-100 shadow-xl hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-bold text-indigo-800 mb-4">Rekening Donasi</h3>
+            <div class="space-y-4">
+                <div class="flex items-center p-4 bg-white rounded-xl border border-indigo-100 shadow-md">
+                    <div class="bg-blue-600 rounded-lg p-2 mr-4">
+                        <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">DANA</p>
+                        <p class="font-bold text-gray-800">+62 856-2478-6426</p>
+                        <p class="text-sm text-gray-600">a.n. Silva Rahmawati</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center p-4 bg-white rounded-xl border border-indigo-100 shadow-md">
+                    <div class="bg-green-600 rounded-lg p-2 mr-4">
+                        <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Bank BRI</p>
+                        <p class="font-bold text-gray-800">4273 0103 8279 537</p>
+                        <p class="text-sm text-gray-600">a.n. Silva Rahmawati</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center p-4 bg-white rounded-xl border border-indigo-100 shadow-md">
+                    <div class="bg-indigo-600 rounded-lg p-2 mr-4">
+                        <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">SEABANK</p>
+                        <p class="font-bold text-gray-800">9018 5918 7430</p>
+                        <p class="text-sm text-gray-600">a.n. Silva Rahmawati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4 items-center justify-center mb-12">
+        <a href="https://wa.me/6281234567890?text=Halo%20HIMA%20SI%2C%20saya%20ingin%20konfirmasi%20donasi"
+            class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition duration-300 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+            Konfirmasi via WhatsApp
+        </a>
+
+        <a href="mailto:himasi@uniku.ac.id?subject=Konfirmasi%20Donasi%20HIMA%20SI"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition duration-300 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Konfirmasi via Email
+        </a>
+    </div>
+
+    <!-- Donation Section -->
+    <div class="mt-16 mb-12 fade-in-up" id="donation">
+        <div class="flex items-center mb-8">
+            <span class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </span>
+            <h2 class="text-2xl font-bold text-gray-800">Dukung HIMA SI Melalui Donasi</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- FAQ Items -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bagaimana cara bergabung dengan HIMA-SI?</h3>
+                    <p class="text-gray-600">Untuk bergabung dengan HIMA-SI, Anda perlu menjadi mahasiswa aktif jurusan
+                        Sistem Informasi di Universitas Kuningan. Pendaftaran anggota baru biasanya dibuka pada awal
+                        tahun akademik. Pantau pengumuman resmi kami untuk informasi lebih lanjut.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Apa saja kegiatan rutin HIMA-SI?</h3>
+                    <p class="text-gray-600">HIMA-SI menyelenggarakan berbagai kegiatan rutin seperti seminar
+                        teknologi, workshop pengembangan keterampilan, kompetisi pemrograman, dan kegiatan sosial. Kami
+                        juga mengadakan pertemuan anggota secara berkala untuk membahas perkembangan organisasi.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bagaimana cara mengajukan kerjasama dengan
+                        HIMA-SI?</h3>
+                    <p class="text-gray-600">Untuk mengajukan kerjasama, silakan kirim proposal resmi ke email kami di
+                        {{ $settings['email'] ?? 'himasi@uniku.ac.id' }}. Proposal akan dibahas oleh pengurus dan kami
+                        akan menghubungi Anda untuk diskusi lebih lanjut.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Apakah HIMA-SI menyediakan program mentoring?
+                    </h3>
+                    <p class="text-gray-600">Ya, HIMA-SI memiliki program mentoring untuk mahasiswa baru dan anggota
+                        yang ingin mengembangkan keterampilan tertentu. Program ini menghubungkan mahasiswa dengan
+                        senior atau profesional di bidang Sistem Informasi.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="mt-8 text-center">
+            <p class="text-gray-600">Jika Anda memiliki pertanyaan lain, silakan hubungi kami di
+                <a href="mailto:{{ $settings['email'] ?? 'himasi@uniku.ac.id' }}">{{ $settings['email'] ?? 'himasi@uniku.ac.id' }}</a>
+            </p>
+        </div>
+    </div>
+</div>
 </div>
 <script>
     // Script untuk animasi scroll

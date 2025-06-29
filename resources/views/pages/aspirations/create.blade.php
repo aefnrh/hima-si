@@ -1,5 +1,5 @@
-@extends('layouts.main')
 
+@extends('layouts.main')
 @section('content')
 <div class="container mx-auto px-4 py-8">
     <div class="bg-gradient-to-r from-[#4A5568] to-[#667EEA] dark:from-gray-800 dark:to-indigo-800 py-16">
@@ -20,7 +20,7 @@
 
         <form action="{{ route('aspirations.store') }}" method="POST" class="space-y-6">
             @csrf
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label for="name" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Nama Lengkap</label>

@@ -24,6 +24,7 @@ class Kabinet extends Model
     protected $fillable = [
         'name',
         'slug',
+        'description',
         'year',
         'vision',
         'mission',

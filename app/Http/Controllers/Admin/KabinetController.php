@@ -33,6 +33,7 @@ class KabinetController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'year' => 'required|string|max:255',
+            'description' => 'required|string',
             'vision' => 'required|string',
             'mission' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -66,6 +67,7 @@ class KabinetController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'year' => 'required|string|max:255',
+            'description' => 'required|string',
             'vision' => 'required|string',
             'mission' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',

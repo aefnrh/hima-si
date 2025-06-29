@@ -52,7 +52,7 @@ class AspirationController extends Controller
             return redirect()->route('user.aspirations.index')
                 ->with('success', 'Aspirasi Anda telah berhasil dikirim. Terima kasih atas masukan Anda!');
         } else {
-            return redirect()->route('aspirations.index')
+            return redirect()->route('user.aspirations.index')
                 ->with('success', 'Aspirasi Anda telah berhasil dikirim. Terima kasih atas masukan Anda!');
         }
     }
